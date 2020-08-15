@@ -7,7 +7,7 @@ def join_nested_strings(src)
   while row_index < src.length do
     element_index = 0 
     while element_index < src[row_index].length do |element|
-      if element == ""
+      if element.is_a?(String)
       total += src[row_index][element_index]
     end
       element_index += 1 
